@@ -1,5 +1,6 @@
 .introDiv {
-  height: auto;
+  min-height: 100vh;
+  height: 100vh;
   margin: 1em;
 }
 

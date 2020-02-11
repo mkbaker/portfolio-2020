@@ -8,6 +8,7 @@ import {
 import { connect } from "react-redux";
 import WOW from "wow.js";
 import "./About.css";
+import animateScrollTo from "animated-scroll-to";
 
 //components 
 import Headshot from "../Headshot/Headshot";
@@ -17,11 +18,16 @@ import Emoji from "../Emoji/Emoji";
 import Grid from "@material-ui/core/Grid";
 
 class About extends Component {
+  jumpToProfile = () => {
+    animateScrollTo(document.querySelector('.profileDiv'));
+  }
   render() {
     return (
-      <div className="introDiv">
+      <div className="introDiv wow fadeIn">
         <div className="introText">
-          <h1 className="wow fadeIn">Hi, I'm <span className="myName">Kellen</span>.</h1>
+          <h1 className="wow fadeIn">
+            Hi, I'm <span className="myName">Kellen</span>.
+          </h1>
           <p className="wow fadeIn">
             I'm a software engineer, musician, and artist. <br />
             I love to learn and explore every day. <br />
@@ -29,7 +35,7 @@ class About extends Component {
             <Emoji symbol="🤘" label="the horns" />
           </p>
         </div>
-        <button>Nice to meet you</button>
+        <button onClick={this.jumpToProfile}>Nice to meet you</button>
       </div>
     );
   }

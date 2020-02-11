@@ -8,12 +8,14 @@ import {
 
 //components
 import About from '../About/About';
+import Profile from '../Profile/Profile';
 
 class SinglePageApp extends Component {
   render() {
     return (
       <div className="introDiv">
           <About/>
+          <Profile/>  
       </div>
     );
   }
