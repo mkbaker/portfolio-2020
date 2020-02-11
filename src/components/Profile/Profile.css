@@ -6,11 +6,12 @@
     min-height: 100vh;
     height: 100vh;
 }
-.colorPop {
+.colorPopLeft {
     position: absolute;
-    height: 100vh;
+    height: 150vh;
     width: 20vw;
     left: 0;
+    top: 100vh;
     background-image: linear-gradient(#fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 .headshotDiv {

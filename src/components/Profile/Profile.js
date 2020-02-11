@@ -16,10 +16,14 @@ import Emoji from "../Emoji/Emoji";
 
 
 class Profile extends Component {
+  jumpToProjects = () => {
+    animateScrollTo(document.querySelector(".projectsContainerDiv"));
+  };
+
   render() {
     return (
       <div className="profileDiv wow fadeInUpBig">
-        <div className="colorPop"></div>
+        <div className="colorPopLeft"></div>
         <div className="headshotDiv">
           <Headshot />
         </div>
@@ -36,11 +40,13 @@ class Profile extends Component {
               listener, and I try to visit a new place every year. I love techno
               and punk music, and I'm a dog person.
             </p>
-            <a 
-            target="_blank"
-            href="https://kellenbakerdotcom.s3.amazonaws.com/resume.pdf">
-            <button>Resume</button>
+            <a
+              target="_blank"
+              href="https://kellenbakerdotcom.s3.amazonaws.com/resume.pdf"
+            >
+              <button>Resume</button>
             </a>
+            <button onClick={this.jumpToProjects}>Projects</button>
           </div>
         </div>
       </div>

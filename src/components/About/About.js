@@ -36,6 +36,7 @@ class About extends Component {
           </p>
         </div>
         <button onClick={this.jumpToProfile}>Nice to meet you</button>
+        <div className="colorPopLow"></div>
       </div>
     );
   }

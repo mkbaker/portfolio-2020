@@ -1,0 +1,56 @@
+.projectsContainerDiv {
+    min-height: 100vh;
+    height: 100vh;
+    /* margin: 1em; */
+}
+
+.projectsTitle {
+    position: absolute;
+    top: 230vh;
+    transform: rotate(-90deg);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 10px;
+    float: right;
+}
+
+.projectText {
+    margin-top: -25px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    text-align: right;
+    border-bottom: 2px solid black;
+}
+
+.project p {
+    font-size: 1em;
+    text-align: right;
+}
+
+.project button {
+    float: right;
+}
+
+.project img {
+    width: 300px;
+    height: auto;
+    padding-left: 15px;
+}
+
+.colorPopRight {
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    top: 300vh;
+    left: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+    background-image: linear-gradient(to left, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
