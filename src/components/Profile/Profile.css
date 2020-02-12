@@ -13,6 +13,7 @@
     left: 0;
     top: 100vh;
     background-image: linear-gradient(#fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    z-index: -1;
 }
 .headshotDiv {
     margin-top: -13%;
@@ -53,4 +54,32 @@
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+@media only screen and (max-width: 700px) {
+    .profileDiv {
+        min-height: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headshotDiv {
+        margin: 0;
+    }
+
+    .profileTextOuterDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 0.5em;
+    width: 100%;
+    }   
+
+    .profileTextOuterDiv h1 {
+        background: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

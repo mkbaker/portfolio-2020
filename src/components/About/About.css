@@ -49,4 +49,17 @@ button:hover {
     width: 40%;
     right: 10%;
     transform: rotate(-45deg);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+  .introDiv {
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0.5em;
+  }
+
+  .colorPopLow {
+      background-image: none;
+  }
 }

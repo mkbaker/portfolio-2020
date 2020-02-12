@@ -34,3 +34,12 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
 }
+
+@media only screen and (max-width: 700px) { 
+    .contactDiv h1 {
+        font-size: 3em;
+    }
+    .test-mailing {
+        width: 100%;
+    }
+}

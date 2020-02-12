@@ -54,3 +54,36 @@
     transform: rotate(45deg);
     background-image: linear-gradient(to left, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
+
+@media only screen and (max-width: 700px) {
+    .projectsContainerDiv {
+        min-height: 100vh;
+        height: 100vh;
+        margin: 0.5em;
+        margin-top: 75%;
+    }
+    .projectsTitle {
+        position: absolute;
+        top: 225vh;
+        transform: none;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .project img {
+        order: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .project .projectText {
+        order: 2;
+    }
+
+}
