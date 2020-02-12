@@ -19,6 +19,9 @@ class Profile extends Component {
   jumpToProjects = () => {
     animateScrollTo(document.querySelector(".projectsContainerDiv"));
   };
+  jumpToContact = () => {
+    animateScrollTo(document.querySelector(".contactDiv"));
+  };
 
   render() {
     return (
@@ -47,6 +50,7 @@ class Profile extends Component {
               <button>Resume</button>
             </a>
             <button onClick={this.jumpToProjects}>Projects</button>
+            <button onClick={this.jumpToContact}>Contact me</button>
           </div>
         </div>
       </div>

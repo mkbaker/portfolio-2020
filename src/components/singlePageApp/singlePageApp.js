@@ -10,6 +10,7 @@ import {
 import About from '../About/About';
 import Profile from '../Profile/Profile';
 import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 
 class SinglePageApp extends Component {
   render() {
@@ -18,6 +19,7 @@ class SinglePageApp extends Component {
           <About/>
           <Profile/>  
           <Projects/>
+          <Contact />
       </div>
     );
   }
