@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Contact.css";
 import WOW from "wow.js";
-
+import Swal from "sweetalert2";
 
 import Emoji from "../Emoji/Emoji";
 //semantic ui
@@ -40,15 +40,23 @@ class Contact extends Component {
     .then(res => {
       console.log("Email successfully sent!");
       this.clearState();
+      this.handleSuccess();
     })
-    // Handle errors here however you like, or use a React error boundary
     .catch(err =>
       console.error(
-        "Oh well, you failed. Here some thoughts on the error that occured:",
+        "Error: ",
         err
       )
     );
   }
+
+  handleSuccess = () => 
+  Swal.fire( {
+  title: 'Sent!',
+  icon: 'success',
+  text: `I'll get back to you soon!`,
+  }
+  )
  
   render() {
     return (

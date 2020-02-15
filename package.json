@@ -16,6 +16,7 @@
     "react-scripts": "3.3.1",
     "redux": "^4.0.5",
     "semantic-ui-react": "^0.88.2",
+    "sweetalert2": "^9.7.2",
     "wow.js": "^1.2.2"
   },
   "scripts": {
