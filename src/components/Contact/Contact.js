@@ -8,18 +8,19 @@ import Emoji from "../Emoji/Emoji";
 import { Form, TextArea, Input, Button } from "semantic-ui-react";
 
 class Contact extends Component {
-  state = { 
-    feedback: '', 
-    name: 'name', 
-    email: 'example@test.com' };
-  
+  state = {
+    feedback: "",
+    name: "name",
+    email: "example@test.com"
+  };
+
   clearState = () => {
     this.setState({
-      feedback: '',
-      name: '',
-      email: ''
-    })
-  }
+      feedback: "",
+      name: "",
+      email: ""
+    });
+  };
   //handle input changes
   handleChangeFor = input => event => {
     this.setState({
@@ -28,36 +29,45 @@ class Contact extends Component {
     });
   };
 
-   handleSubmit = (event) => {
-	    const templateId = "template_w8sQUvWy";
+  handleSubmit = event => {
+    const templateId = "template_w8sQUvWy";
 
-      this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email});
-  }
+    this.sendFeedback(templateId, {
+      message_html: this.state.feedback,
+      from_name: this.state.name,
+      reply_to: this.state.email
+    });
+  };
 
   sendFeedback = (templateId, variables) => {
-	window.emailjs
-    .send("mkellenbaker_gmail_com", templateId, variables)
-    .then(res => {
-      console.log("Email successfully sent!");
-      this.clearState();
-      this.handleSuccess();
-    })
-    .catch(err =>
-      console.error(
-        "Error: ",
-        err
-      )
-    );
-  }
+    window.emailjs
+      .send("mkellenbaker_gmail_com", templateId, variables)
+      .then(res => {
+        this.clearState();
+        this.handleSuccess();
+      })
+      .catch(err => {
+        console.error("Error: ", err);
+        this.handleError();
+      });
+  };
 
-  handleSuccess = () => 
-  Swal.fire( {
-  title: 'Sent!',
-  icon: 'success',
-  text: `I'll get back to you soon!`,
-  }
-  )
- 
+  handleSuccess = () => {
+    Swal.fire({
+      title: "Sent!",
+      icon: "success",
+      text: `I'll get back to you soon!`
+    });
+  };
+
+  handleError = () => {
+    Swal.fire({
+      title: "Error",
+      icon: "error",
+      text: `Hmm, something went wrong. Sorry :(`
+    });
+  };
+
   render() {
     return (
       <div className="contactDiv">
@@ -65,12 +75,12 @@ class Contact extends Component {
         <h2 className="wow slideInLeft">Email Me:</h2>
 
         <form className="test-mailing">
-          <input 
-            id="email" 
+          <input
+            id="email"
             onChange={this.handleChangeFor("email")}
             value={this.state.email}
             placeholder="Your email"
-            />
+          />
           <div>
             <textarea
               id="test-mailing"
@@ -89,6 +99,4 @@ class Contact extends Component {
   }
 }
 
-
-
-export default (Contact);
+export default Contact;
