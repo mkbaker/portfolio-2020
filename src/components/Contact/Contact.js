@@ -11,7 +11,7 @@ class Contact extends Component {
   state = {
     feedback: "",
     name: "name",
-    email: "example@test.com"
+    email: ""
   };
 
   clearState = () => {

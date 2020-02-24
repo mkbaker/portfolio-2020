@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import './Projects.css';
 //photos 
 import githubDrive from "../images/githubDrive.jpeg";
-import kellenbaker from "../images/kellenbaker.jpg";
-import publicSpeaking from "../images/publicSpeaking.jpg";
 import silentAction from "../images/silentAction.png";
 import whatToSay from "../images/fiveHealthyPhrases.png";
 import lightbulb from '../images/lightbulb.png';
