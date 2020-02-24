@@ -51,7 +51,7 @@ class Projects extends Component {
               A crowdfunding platform where users can host online auctions to
               benefit community members facing medical expenses.
             </p>
-            <button onclick={this.handleSilentAction}>Click here</button>
+            <button onClick={this.handleSilentAction}>Click here</button>
           </div>
           <img src={silentAction} />
         </div>
