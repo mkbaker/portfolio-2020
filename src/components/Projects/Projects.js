@@ -11,6 +11,10 @@ class Projects extends Component {
     window.open("http://www.github.com/mkbaker", "_blank");
   };
 
+  handleDogBlog = () => {
+    window.open("https://nameless-spire-70677.herokuapp.com/", "_blank");
+  };
+
   handleLinkedIn = () => {
     window.open("https://www.linkedin.com/in/kellen-baker/", "_blank");
   };
@@ -40,6 +44,18 @@ class Projects extends Component {
             <button onClick={this.handleGithub}>Click here</button>
           </div>
           <img src={githubDrive} />
+        </div>
+
+        <div className="project">
+          <div className="projectText">
+            <h3>Blog for Dogs</h3>
+            <p>
+              A silly blog I made to explore routing and data management with
+              Laravel.
+            </p>
+            <button onClick={this.handleDogBlog}>Click here</button>
+          </div>
+          <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" />
         </div>
 
         <div className="project">
