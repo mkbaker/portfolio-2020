@@ -5,6 +5,7 @@ import githubDrive from "../images/githubDrive.jpeg";
 import silentAction from "../images/silentAction.png";
 import whatToSay from "../images/fiveHealthyPhrases.png";
 import lightbulb from '../images/lightbulb.png';
+import ilhanSite from '../images/ilhanSite.png';
 
 class Projects extends Component {
   handleGithub = () => {
@@ -27,9 +28,9 @@ class Projects extends Component {
     window.open("https://withall-kellen.herokuapp.com/#/home", "_blank");
   };
 
-  handleLightbulb = () => {
-    window.open("https://pedantic-bardeen-ad4f37.netlify.com/", "_blank");
-  };
+  handleilhanSite = () => {
+    window.open("https://congressional-art-competition.herokuapp.com/#/", "_blank");
+  }
 
   render() {
     return (
@@ -44,6 +45,15 @@ class Projects extends Component {
             <button onClick={this.handleGithub}>Click here</button>
           </div>
           <img src={githubDrive} />
+        </div>
+
+        <div className="project">
+          <div className="projectText">
+            <h3>Congressional Art Competition</h3>
+            <p>Custom application built for Congresswoman Ilhan Omar.</p>
+            <button onClick={this.handleilhanSite}>Click here</button> 
+          </div>
+          <img src ={ilhanSite} />
         </div>
 
         <div className="project">
@@ -83,17 +93,6 @@ class Projects extends Component {
           <img src={whatToSay} />
         </div>
 
-        <div className="project">
-          <div className="projectText">
-            <h3>Lightbulb Calculator</h3>
-            <p>
-              A simple calculator app to estimate yearly costs for different
-              types of lightbulbs. Built with AngularJS.
-            </p>
-            <button onClick={this.handleLightbulb}>Click here</button>
-          </div>
-          <img src={lightbulb} />
-        </div>
         <div className="colorPopRight"></div>
       </div>
     );
