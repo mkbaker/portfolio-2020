@@ -45,7 +45,7 @@ class Profile extends Component {
             </p>
             <a
               target="_blank"
-              href="https://kellenbakerdotcom.s3.amazonaws.com/kellen-baker-resume2.7.20.pdf"
+              href="https://kellenbakerdotcom.s3.amazonaws.com/kellenBakerResume2021.pdf"
             >
               <button>Resume</button>
             </a>
