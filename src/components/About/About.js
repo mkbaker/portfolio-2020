@@ -1,17 +1,8 @@
 import React, { Component } from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch
-} from "react-router-dom";
-import { connect } from "react-redux";
-import WOW from "wow.js";
 import "./About.css";
 import animateScrollTo from "animated-scroll-to";
 
 //components 
-import Headshot from "../Headshot/Headshot";
 import Emoji from "../Emoji/Emoji";
 
 //material-ui

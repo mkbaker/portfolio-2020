@@ -25,7 +25,7 @@ class Profile extends Component {
 
   render() {
     return (
-      <div className="profileDiv wow fadeInUpBig">
+      <div className="profileDiv">
         <div className="colorPopLeft"></div>
         <div className="headshotDiv">
           <Headshot />

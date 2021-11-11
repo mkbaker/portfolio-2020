@@ -33,17 +33,13 @@
 }
 
 .imageCropper {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+  width: auto;
+  height: 400px;
 }
 
 .homeHeadshot {
   display: inline;
   margin: 0 auto;
-  margin-left: -25%;
   height: 100%;
   width: auto;
 }
