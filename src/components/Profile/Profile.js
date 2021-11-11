@@ -35,9 +35,9 @@ class Profile extends Component {
           <div className="profileTextInnerDiv">
             <p>
               I'm a full stack software developer and a lifelong musician. I
-              live in the Twin Cities, but I'm originally from Nome, Alaska. I'm
-              fluent in many languages and frameworks. I enjoy developing
-              beautiful, thoughtful applications, and I love writing the logic
+              live in the Twin Cities, but I'm originally from Nome, Alaska. 
+              I like working with Vue, Node, and MongoDB or PostgreSQL.
+              I enjoy developing beautiful, thoughtful applications, and I love writing the logic
               that makes them work. More broadly, I'm interested in the
               intersection of art, music, and technology. I'm an avid reader and
               listener, and I try to visit a new place every year. I love techno
