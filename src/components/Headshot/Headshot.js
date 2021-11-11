@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import kellenbaker from "../images/kellenbaker.jpg";
+import kellenbaker from "../images/552A5746-2.jpg";
 
 
 class Headshot extends Component {
