@@ -27,6 +27,12 @@ class About extends Component {
           </p>
         </div>
         <button onClick={this.jumpToProfile}>Nice to meet you</button>
+        <a
+          target="_blank"
+          href="https://blog.kellenbaker.com"
+        >
+          Check out my tech blog <Emoji symbol="↗️" label="arrow" />
+        </a>
         <div className="colorPopLow"></div>
       </div>
     );
